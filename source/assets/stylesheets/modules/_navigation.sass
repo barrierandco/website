@@ -1,10 +1,27 @@
 // *************************************
 //
-//   Module
+//   Navigation
 //
 // *************************************
 
-// .mv-module
+.navigation
+  border-bottom: 1px solid rgba(black, 0.15)
+  display: flex
+  flex-flow: row nowrap
+  a
+    background: $baby
+    border-radius: $b-borderRadius
+    display: inline-block
+    margin: ($b-space * 0.75) ($b-space * 0.125)
+    padding: ($b-space * 0.35) ($b-space * 0.75)
+    &:hover
+      background: $blue
+      color: white
+    &:last-child
+      background: transparent
+      &:hover
+        background: $baby
+        color: $blue
 
 // -------------------------------------
 //   Modifiers
