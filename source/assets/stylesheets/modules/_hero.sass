@@ -9,8 +9,10 @@
   background-repeat: no-repeat
   background-size: 590px 625px
   display: flex
-  flex-flow: row nowrap
+  flex-flow: column nowrap
   height: calc(100vh - 65px)
+  +respond-to($g-m)
+    flex-direction: row
 
 // -------------------------------------
 //   Modifiers
@@ -39,4 +41,5 @@
   flex-flow: column nowrap
   justify-content: space-around
   padding: ($b-space * 7) 0
-  width: 40%
+  +respond-to($g-m)
+    width: calc(100% - 650px)

@@ -1,26 +1,18 @@
 // *************************************
 //
-//   Link
+//   Featured
 //
 // *************************************
 
-.link
-  background: $baby
-  border-radius: $b-borderRadius
-  color: $blue
-  display: inline-block
-  padding: ($b-space * 0.2) ($b-space * 0.6) ($b-space * 0.3)
-  &:hover
-    background: $blue
-    color: white
+.featured
+  display: flex
+  height: 700px
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-.link--overshoot
-  margin-left: ($b-space * -0.6)
-  margin-top: ($b-space * 0.25)
+// .mv-module--modifier
 
 // -------------------------------------
 //   States
@@ -38,4 +30,8 @@
 //   Submodules
 // -------------------------------------
 
-// .mv-module-submodules
+.featured-content
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  width: calc(100% - 650px)
