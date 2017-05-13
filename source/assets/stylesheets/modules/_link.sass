@@ -1,22 +1,23 @@
 // *************************************
 //
-//   Hero
+//   Link
 //
 // *************************************
 
-.hero
-  background-position: 100% 50%
-  background-repeat: no-repeat
-  background-size: 590px 625px
-  display: flex
-  flex-flow: row nowrap
-  height: calc(100vh - 65px)
+.link
+  background: $baby
+  color: $blue
+  display: inline-block
+  padding: ($b-space * 0.2) ($b-space * 0.6) ($b-space * 0.3)
+  text-decoration: underline
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-// .mv-module--modifier
+.link--overshoot
+  margin-left: ($b-space * -0.6)
+  margin-top: ($b-space * 0.25)
 
 // -------------------------------------
 //   States
@@ -34,9 +35,4 @@
 //   Submodules
 // -------------------------------------
 
-.hero-content
-  display: flex
-  flex-flow: column nowrap
-  justify-content: space-around
-  padding: ($b-space * 7) 0
-  width: 40%
+// .mv-module-submodules
