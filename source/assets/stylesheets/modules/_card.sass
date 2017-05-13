@@ -15,7 +15,7 @@
 // -------------------------------------
 
 .card--bordered
-  border: 1px solid rgba(white, 0.2)
+  border: 1px solid lighten($blue, 15%)
   color: rgba(white, 0.65)
   display: block
   margin: -1px 0 0
@@ -36,7 +36,7 @@
     width: ($b-space * 0.75)
   &::before
     background: $blue
-    border: 1px solid rgba(white, 0.2)
+    border: 1px solid lighten($blue, 15%)
     border-radius: 50%
     height: ($b-space * 2.75)
     right: ($b-space * 1.5)
@@ -46,6 +46,7 @@
   &:hover
     border-color: $baby
     color: white
+    z-index: 1
     &::after
       border-color: $gray
     &::before

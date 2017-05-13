@@ -34,4 +34,8 @@
   display: flex
   flex-flow: column nowrap
   justify-content: center
-  width: calc(100% - 650px)
+  margin: 0 auto
+  max-width: ($b-maxWidth * 0.5)
+  +respond-to($g-l)
+    margin: 0
+    width: calc(100% - 650px)
