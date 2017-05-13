@@ -87,6 +87,10 @@
 
 // ----- Color ----- //
 
+.tcb
+  color: $blue
+.tcg
+  color: $gray
 .tcw
   color: white
 
@@ -96,9 +100,16 @@
 
 .tsl
   font-size: $t-fontSize-l
+.tsxl
+  font-size: $t-heading-fontSize-l
+  +respond-to($g-m)
+    font-size: 5rem
 
 // ----- Style ----- //
 
 // ----- Transform ----- //
 
 // ----- Weight ----- //
+
+.twl
+  font-weight: 300
