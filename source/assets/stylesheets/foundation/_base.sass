@@ -41,24 +41,32 @@ h1, h2, h3, h4,
 
 h1
   color: $gray
-  font-size: $t-heading-fontSize-l
+  font-size: $t-heading-fontSize
   margin-bottom: $b-space
+  +respond-to($g-s)
+    font-size: $t-heading-fontSize-l
 
 h2
   color: $gray
-  font-size: $t-heading-fontSize
+  font-size: $t-heading-fontSize-s
   margin-bottom: $b-space
+  +respond-to($g-s)
+    font-size: $t-heading-fontSize
 
 h3
   color: $blue
-  font-size: $t-heading-fontSize-s
+  font-size: $t-fontSize-l
   margin-bottom: ($b-space * 0.5)
+  +respond-to($g-s)
+    font-size: $t-heading-fontSize-s
 
 h4
   color: $gray
-  font-size: $t-heading-fontSize-s
+  font-size: $t-fontSize-l
   font-weight: 500
   margin-bottom: ($b-space * 0.25)
+  +respond-to($g-s)
+    font-size: $t-heading-fontSize-s
 
 // -------------------------------------
 //   Inline Content

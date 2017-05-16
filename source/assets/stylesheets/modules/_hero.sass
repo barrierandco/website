@@ -5,14 +5,22 @@
 // *************************************
 
 .hero
-  background-position: 100% 50%
+  align-items: center
+  background-position: 50% ($b-space * 1.5)
   background-repeat: no-repeat
-  background-size: 550px 555px
+  background-size: calc(100vw - #{$b-space * 2}) calc(100vw - #{$b-space * 2.1})
+  border-bottom: $b-border
   display: flex
   flex-flow: column nowrap
-  height: calc(100vh - 150px)
-  +respond-to($g-m)
-    flex-direction: row
+  height: 600px
+  justify-content: flex-end
+  +respond-to($g-s)
+    align-items: flex-start
+    background-position: 100% 50%
+    background-size: 550px 555px
+    border-bottom: 0
+    height: calc(100vh - 150px)
+    justify-content: space-around
 
 // -------------------------------------
 //   Modifiers
@@ -37,9 +45,7 @@
 // -------------------------------------
 
 .hero-content
-  display: flex
-  flex-flow: column nowrap
-  justify-content: space-around
-  padding: ($b-space * 7) 0
   +respond-to($g-m)
+    width: ($b-maxWidth * 0.5)
+  +respond-to($g-l)
     width: calc(100% - 650px)
