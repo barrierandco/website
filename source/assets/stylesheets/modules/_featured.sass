@@ -6,7 +6,8 @@
 
 .featured
   display: flex
-  height: 700px
+  height: 750px
+  position: relative
 
 // -------------------------------------
 //   Modifiers
@@ -39,3 +40,12 @@
   +respond-to($g-l)
     margin: 0
     width: calc(100% - 650px)
+  
+.featured-media
+  left: 550px
+  position: absolute
+  top: ($b-space * 4)
+  width: 100%
+  #image-syllabus
+    height: 746px
+    width: 975px
