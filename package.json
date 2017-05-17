@@ -13,5 +13,8 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-webpack": "^1.5.0"
+  },
+  "dependencies": {
+    "gulp-file": "^0.3.0"
   }
 }
