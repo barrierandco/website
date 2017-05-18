@@ -1,0 +1,61 @@
+// *************************************
+//
+//   List
+//
+// *************************************
+
+.list
+  list-style: none
+  padding: 0 0 0 $b-space
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .mv-module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .mv-module.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-mv-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+.list-item
+  position: relative
+  &::after,
+  &::before
+    content: ''
+    position: absolute
+  &::after
+    border-left: $b-border
+    border-left-color: darken(white, 10%)
+    height: ($b-space * 4)
+    left: ($b-space * -0.785)
+    top: ($b-space * 0.8)
+    width: 0px
+  &::before
+    background: $green
+    border-radius: 50%
+    height: ($b-space * 0.5)
+    left: ($b-space * -1)
+    top: ($b-space * 0.3)
+    width: ($b-space * 0.5)
+    z-index: 10
+  &:last-child::after
+    border-left-color: white
+  p
+    margin: 0
+    &:first-child
+      color: $gray-dark
+    &:last-child
+      font-size: $t-fontSize-s
