@@ -24,11 +24,12 @@
 
 .logo--navigation
   background: $baby
-  display: none !important
   font-size: 1rem
   margin: 0
-  +respond-to($g-m)
-    display: inline-block !important
+  position: relative
+  top: 1px
+  +respond-to($g-s)
+    top: auto
 
 // -------------------------------------
 //   States
