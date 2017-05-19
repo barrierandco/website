@@ -5,6 +5,7 @@
 // *************************************
 
 .card
+  padding: ($b-space * 1.5) ($b-space * 1.5) ($b-space * 0.5)
   &:first-of-type
     border-radius: $b-borderRadius $b-borderRadius 0 0
   &:last-of-type
@@ -14,12 +15,23 @@
 //   Modifiers
 // -------------------------------------
 
+.card--blue
+  background: $baby
+  margin-bottom: $b-space
+  padding: ($b-space * 0.75) $b-space
+  p
+    color: $gray-dark
+    margin: 0
+  strong
+    color: $blue
+    font-weight: 700
+
 .card--bordered
   border: 1px solid lighten($blue, 15%)
   color: rgba(white, 0.65)
   display: block
   margin: -1px 0 0
-  padding: ($b-space * 1.5) ($b-space * 6) ($b-space * 1.5) ($b-space * 1.5)
+  padding: ($b-space * 1.5) ($b-space * 6) $b-space ($b-space * 1.5)
   position: relative
   text-decoration: none
   &::after,
@@ -52,8 +64,11 @@
     &::before
       background: white
       border-color: white
-  p
-    margin: 0
+
+.card--borderedInverse
+  border: $b-border
+  border-color: darken(white, 10%)
+  margin: -1px 0 0
 
 // -------------------------------------
 //   States
