@@ -23,13 +23,16 @@
     font-size: 3.5rem
 
 .logo--navigation
-  background: $baby
+  background: $blue !important
+  color: white
   font-size: 1rem
   margin: 0
   position: relative
   top: 1px
   +respond-to($g-s)
     top: auto
+  &:hover
+    background: lighten($blue, 10%) !important
 
 // -------------------------------------
 //   States
