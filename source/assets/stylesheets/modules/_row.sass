@@ -19,8 +19,17 @@
   background: white
   background-image: linear-gradient(darken(white, 7%), white)
 
+.row--image
+  img
+    +respond-to($g-s)
+      transform: scale(0.9)
+
 .row--light
   background: $baby
+
+.row--white
+  background: white
+  border-bottom: $b-border
 
 // -------------------------------------
 //   States
@@ -38,4 +47,14 @@
 //   Submodules
 // -------------------------------------
 
-// .mv-module-submodules
+.row-content
+  position: relative
+  z-index: 10
+  +respond-to($g-s)
+    margin-bottom: ($b-space * 2.5)
+    margin-top: ($b-space * -6)
+    padding-left: ($b-space * 1.5)
+  +respond-to($g-m)
+    margin-bottom: ($b-space * 5)
+    margin-top: ($b-space * -12)
+    padding-left: ($b-space * 3)
