@@ -48,13 +48,24 @@
 // -------------------------------------
 
 .row-content
-  position: relative
-  z-index: 10
-  +respond-to($g-s)
-    margin-bottom: ($b-space * 2.5)
-    margin-top: ($b-space * -6)
-    padding-left: ($b-space * 1.5)
+  margin-top: $b-space
+  text-align: center
   +respond-to($g-m)
-    margin-bottom: ($b-space * 5)
-    margin-top: ($b-space * -12)
-    padding-left: ($b-space * 3)
+    text-align: left
+    z-index: 10
+  p
+    margin-bottom: ($b-space * 0.75)
+
+.row-content--left
+  margin-top: 0
+  +respond-to($g-m)
+    bottom: ($b-space * 8)
+    left: ($b-space * 6)
+    position: absolute
+
+.row-content--right
+  +respond-to($g-m)
+    position: absolute
+    right: ($b-space * 7)
+    top: 50%
+    transform: translateY(-50%)
