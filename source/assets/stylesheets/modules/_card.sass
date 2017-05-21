@@ -5,7 +5,9 @@
 // *************************************
 
 .card
-  padding: ($b-space * 1.5) ($b-space * 1.5) ($b-space * 0.5)
+  padding: $b-space $b-space ($b-space * 0.25)
+  +respond-to($g-m)
+    padding: ($b-space * 1.5) ($b-space * 1.5) ($b-space * 0.5)
   &:first-of-type
     border-radius: $b-borderRadius $b-borderRadius 0 0
   &:last-of-type
@@ -70,6 +72,26 @@
   border-color: darken(white, 10%)
   margin: -1px 0 0
 
+.card--letter
+  background: white
+  border-radius: $b-borderRadius !important
+  padding-bottom: $b-space
+  +respond-to($g-m)
+    padding: ($b-space * 2)
+  img
+    max-width: 250px
+
+.card--profile
+  background: white
+  border-radius: $b-borderRadius !important
+  margin: $b-space auto
+  max-width: 335px
+  overflow: hidden
+  padding: 0 0 $b-space
+  text-align: center
+  +respond-to($g-m)
+    margin: 0 auto
+
 // -------------------------------------
 //   States
 // -------------------------------------
@@ -86,4 +108,9 @@
 //   Submodules
 // -------------------------------------
 
-// .mv-module-submodules
+.card-portrait
+  background-image: url('/assets/images/misc-portrait.jpg')
+  background-position: center center
+  background-size: cover
+  height: 300px
+  margin-bottom: $b-space
