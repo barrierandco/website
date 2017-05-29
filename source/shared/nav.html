@@ -1,11 +1,13 @@
-<div class="header">
-  <div class="navigation">
-    <nav class="navigation-links">
-      <a href="/" class="logo logo--navigation">Barrier&nbsp;&amp;&nbsp;Co.</a>
-      <a href="/work">Work</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-    </nav>
-    <a href="mailto:john@barrierandco.com">john@barrierandco.com</a>
+{% macro active(page) %}
+  <div class="header">
+    <div class="navigation">
+      <nav class="navigation-links">
+        <a href="/" class="logo logo--navigation {% if page == 'home' %}is-hidden{% endif %}">Barrier&nbsp;&amp;&nbsp;Co.</a>
+        <a href="/work" class="{% if page == 'work' %}is-active{% endif %}">Work</a>
+        <a href="/about" class="{% if page == 'about' %}is-active{% endif %}">About</a>
+        <a href="/contact" class="{% if page == 'contact' %}is-active{% endif %}">Contact</a>
+      </nav>
+      <a href="mailto:john@barrierandco.com">john@barrierandco.com</a>
+    </div>
   </div>
-</div>
+{% endmacro %}

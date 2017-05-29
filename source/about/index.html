@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
+{% import "nav.html" as nav %}
+
 {% block content %}
 
-{% include "nav.html" %}
-
+{{ nav.active('about') }}
 <div class="cell well well--m">
   <h1>About <span>Barrier &amp; Co.</span></h1>
   <hr>

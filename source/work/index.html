@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
+{% import "nav.html" as nav %}
+
 {% block content %}
 
-{% include "nav.html" %}
-
+{{ nav.active('work') }}
 <div class="cell">
   <img src="/assets/images/device-syllabus-half.png" alt="syllabus screenshot on a computer" />
   <div class="g well">

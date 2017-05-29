@@ -1,7 +1,9 @@
 {% extends "layout.html" %}
+{% import "nav.html" as nav %}
+
 {% block content %}
 
-{% include "nav.html" %}
+{{ nav.active('home') }}
 <div class="cell">
   <div class="hero" style="background-image: url(/assets/images/devices-hero.png)">
     <div class="hero-content">
